@@ -4,7 +4,7 @@ import React from 'react';
 function Seting_r(props) {
     return (
         <div className="seting-r">
-          a  vx
+        Mẹ chương ca ve
         </div>
     );
 }

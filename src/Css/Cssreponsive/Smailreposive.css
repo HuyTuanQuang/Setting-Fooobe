@@ -1,0 +1,36 @@
+@media only screen and (max-width: 768px) {
+  .seting-r {
+    display: none;
+  }
+
+  /* left */
+
+  .seting-l {
+    display: none;
+  }
+
+  /* center */
+
+  .seting-c {
+    width: 100%;
+    height: 100vh;
+    float: left;
+  }
+  .seting-c-scroll:hover::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+  .seting-privacy-c-info_bodysmail {
+    min-width: 98%;
+    min-height: 100%;
+    left: 0%;
+    top: 0%;
+    border-radius: 0px;
+  }
+  .seting-privacy-c-info-bodysmail-bottom {
+    min-height: 30px;
+    min-width: 98%;
+    justify-content: space-around;
+    left: 0%;
+   
+  }
+}

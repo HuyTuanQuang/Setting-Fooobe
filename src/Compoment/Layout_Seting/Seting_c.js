@@ -55,6 +55,9 @@ const [info1, setInfo1] = useState("")
         }else if(editusername.length <= 5){
             console.log(editusername.length)
             setInfo1("Tên người dùng > 5 kí tự")
+        }else if(!isNaN(editusername)){
+          
+            setInfo1("Phải có cả chữ")
         }else{
             setInfo1("")
             setUsername(editusername)

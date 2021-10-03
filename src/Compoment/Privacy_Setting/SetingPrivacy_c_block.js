@@ -29,6 +29,12 @@ function SetingPrivacy_c_block(props) {
         setlistblock(newList)
         
     }
+    const [seach,setSeach]=useState("")
+    const onChaneSeach = (e) =>{
+        const name =e.target.value;
+       
+        setSeach(name)
+    }
 
     return (
         <div className="seting-c">
@@ -51,8 +57,15 @@ function SetingPrivacy_c_block(props) {
 
                         </div>
                         <div className="seting-c-scroll-content-privacy-td" style={{ minHeight: '50px', backgroundColor: 'aquamarine', display: 'flex', flexDirection: 'column' }}>
-                            <label style={{ fontWeight: '600', margin: '5px' }}>Danh sách chặn</label>
-                            {listblock.map((val) => {
+                            <label style={{ fontWeight: '600', margin: '5px' }}>Danh sách chặn</label><input style={{height:'20px',width:'50%',outline:'none',border:'none',marginLeft:'3px',borderRadius:'10px',display:'flex',paddingLeft:'10px',marginBottom:'3px'}} onChange={onChaneSeach} type="text"/>
+                            {listblock.filter((val)=>{
+                                if(seach== ""){
+                                    return val
+                                }else if(val.name.toLowerCase().includes(seach.toLowerCase())){
+                                    console.log(val.name.toLowerCase().includes(seach.toLowerCase()))
+                                    return val
+                                }
+                            }).map((val) => {
                                 return (           
                                     <label  key={val.id}  style={{ padding: '10px',width:'100%', display: 'flex', justifyContent: 'space-between' }}>{val.name} <label className="seting-c-scroll-content-row-link" style={{width:'30%'}} onClick={()=>Remove(val.id)}>Bỏ chặn</label></label>
                                 )

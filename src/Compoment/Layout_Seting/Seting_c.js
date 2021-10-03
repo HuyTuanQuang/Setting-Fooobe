@@ -27,10 +27,11 @@ function Seting_c(props) {
             setInfo("Thiếu họ")
         } else if (name1.name.length === 0) {
             setInfo("Thiếu tên")
-        } else if(isNaN(name1)){
+        } else if(!isNaN(name1)){
             setInfo("!số")
         }else{
             setName(name1)
+            setInfo("")
         }
         console.log(info)
     }

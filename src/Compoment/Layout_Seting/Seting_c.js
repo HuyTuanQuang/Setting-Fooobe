@@ -48,6 +48,7 @@ function Seting_c(props) {
     const onChangeusername = (e) => {
         setEditUsername(e.target.value)
     }
+
     const onClickusername = () => {
         if (editusername === "") {
             setInfo1("Thiếu tên người dùng")
@@ -64,8 +65,6 @@ function Seting_c(props) {
 
         }
     }
-
-
 
     //
     const [openname, setOpenname] = useState(false)

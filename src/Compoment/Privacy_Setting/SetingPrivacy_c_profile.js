@@ -48,11 +48,11 @@ function SetingPrivacy_c_profile(props) {
                             </div>
                         }
                         {
-                            open ? <div style={{ width: '15%' }} className="Seting_link" onClick={() => setOpen(!open)}>
+                            open ? <div style={{ width: '15%' }} className="seting-link" onClick={() => setOpen(!open)}>
                                 Chỉnh sửa
                             </div>
                                 :
-                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="Seting_link" onClick={() => setOpen(!open)}>
+                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="seting-link" onClick={() => setOpen(!open)}>
                                     Đóng
                                 </div>
                         }
@@ -79,11 +79,11 @@ function SetingPrivacy_c_profile(props) {
                         </div>
                         }
                         {
-                            open1 ? <div style={{ width: '15%' }} className="Seting_link" onClick={() => setOpen1(!open1)}>
+                            open1 ? <div style={{ width: '15%' }} className="seting-link" onClick={() => setOpen1(!open1)}>
                                 Chỉnh sửa
                             </div>
                                 :
-                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="Seting_link" onClick={() => setOpen1(!open1)}>
+                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="seting-link" onClick={() => setOpen1(!open1)}>
                                     Đóng
                                 </div>
                         }
@@ -110,11 +110,11 @@ function SetingPrivacy_c_profile(props) {
                         </div>
                         }
                         {
-                            open2 ? <div style={{ width: '15%' }} className="Seting_link" onClick={() => setOpen2(!open2)}>
+                            open2 ? <div style={{ width: '15%' }} className="seting-link" onClick={() => setOpen2(!open2)}>
                                 Chỉnh sửa
                             </div>
                                 :
-                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="Seting_link" onClick={() => setOpen2(!open2)}>
+                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="seting-link" onClick={() => setOpen2(!open2)}>
                                     Đóng
                                 </div>
                         }
@@ -142,11 +142,11 @@ function SetingPrivacy_c_profile(props) {
                             </div>
                         }
                         {
-                            open ? <div style={{ width: '15%' }} className="Seting_link" onClick={() => setOpen(!open)}>
+                            open ? <div style={{ width: '15%' }} className="seting-link" onClick={() => setOpen(!open)}>
                                 Chỉnh sửa
                             </div>
                                 :
-                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="Seting_link" onClick={() => setOpen(!open)}>
+                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="seting-link" onClick={() => setOpen(!open)}>
                                     Đóng
                                 </div>
                         }
@@ -173,11 +173,11 @@ function SetingPrivacy_c_profile(props) {
                         </div>
                         }
                         {
-                            open1 ? <div style={{ width: '15%' }} className="Seting_link" onClick={() => setOpen1(!open1)}>
+                            open1 ? <div style={{ width: '15%' }} className="seting-link" onClick={() => setOpen1(!open1)}>
                                 Chỉnh sửa
                             </div>
                                 :
-                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="Seting_link" onClick={() => setOpen1(!open1)}>
+                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="seting-link" onClick={() => setOpen1(!open1)}>
                                     Đóng
                                 </div>
                         }
@@ -204,11 +204,11 @@ function SetingPrivacy_c_profile(props) {
                         </div>
                         }
                         {
-                            open2 ? <div style={{ width: '15%' }} className="Seting_link" onClick={() => setOpen2(!open2)}>
+                            open2 ? <div style={{ width: '15%' }} className="seting-link" onClick={() => setOpen2(!open2)}>
                                 Chỉnh sửa
                             </div>
                                 :
-                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="Seting_link" onClick={() => setOpen2(!open2)}>
+                                <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="seting-link" onClick={() => setOpen2(!open2)}>
                                     Đóng
                                 </div>
                         }

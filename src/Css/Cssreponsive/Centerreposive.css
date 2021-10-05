@@ -1,6 +1,7 @@
 @media only screen and (min-width: 769px) and (max-width: 1199px) {
-  .seting-c {
-    width: 65%;
+
+  .seting-r {
+    display: none;
   }
 
   /* left */
@@ -12,10 +13,10 @@
     font-size: 14pt;
   }
   /* center */
-
-  .Seting-r {
-    display: none;
+  .seting-c {
+    width: 65%;
   }
+  
   .seting-privacy-c-info-bodysmail {
     width: 60%;
 
@@ -24,4 +25,5 @@
   .seting-privacy-c-info-bodysmail-bottom {
     width: 60%;
   }
+  
 }

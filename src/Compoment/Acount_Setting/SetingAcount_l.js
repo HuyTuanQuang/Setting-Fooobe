@@ -16,7 +16,7 @@ function SetingAcount_l(props) {
             </div>
         </div>
         <div className="seting-l-scroll" id="seting-l-scroll-style">
-            <Link to="/setting/account" className="seting-l_scroll-menuitem">
+            <Link to="/setting/account" className="seting-l-scroll-menuitem">
                 <div className="seting-l-scroll-menuitem-icon">
                     <CgProfile />
                 </div>
@@ -24,7 +24,7 @@ function SetingAcount_l(props) {
                     Acount
                 </div>
             </Link>
-            <Link to="/setting/account/language" className="seting-l_scroll-menuitem">
+            <Link to="/setting/account/language" className="seting-l-scroll-menuitem">
                 <div className="seting-l-scroll-menuitem-icon">
                     <CgProfile />
                 </div>

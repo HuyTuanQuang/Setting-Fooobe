@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 function Seting_c(props) {
     // name   
-    const value={
+    const value = {
         ho: 'Huy',
         tendem: '',
         name: 'Quang',
@@ -27,47 +27,47 @@ function Seting_c(props) {
             setInfo("Thiếu họ")
         } else if (name1.name.length === 0) {
             setInfo("Thiếu tên")
-        } else if(!isNaN(name1)){
+        } else if (!isNaN(name1)) {
             setInfo("!số")
-        }else{
+        } else {
             setName(name1)
             setInfo("")
         }
         console.log(info)
     }
     const onClick = (e) => {
-        if(validateform){
+        if (validateform) {
             return validateform();
         }
     }
 
-//   user name
-const [info1, setInfo1] = useState("")
-    const [username,setUsername]=useState('m19036420970019')
-    const [editusername,setEditUsername]=useState(username)
-    const onChangeusername = (e)=>{
+    //   user name
+    const [info1, setInfo1] = useState("")
+    const [username, setUsername] = useState('m19036420970019')
+    const [editusername, setEditUsername] = useState(username)
+    const onChangeusername = (e) => {
         setEditUsername(e.target.value)
     }
-    const onClickusername = () =>{
-        if(editusername === ""){
+    const onClickusername = () => {
+        if (editusername === "") {
             setInfo1("Thiếu tên người dùng")
             console.log(editusername.length)
-        }else if(editusername.length <= 5){
-            console.log(editusername.length)
+        } else if (editusername.length <= 5) {
             setInfo1("Tên người dùng > 5 kí tự")
-        }else if(!isNaN(editusername)){
-          
-            setInfo1("Phải có cả chữ")
-        }else{
+            console.log(isNaN(editusername))
+        } else if (!isNaN(editusername) ) {
+            setInfo1("Phải có cả số và chữ")
+            
+        } else {
             setInfo1("")
             setUsername(editusername)
-            
+
         }
     }
 
-   
 
-//
+
+    //
     const [openname, setOpenname] = useState(false)
     const [openname1, setOpenname1] = useState(false)
     const [openname2, setOpenname2] = useState(false)
@@ -94,15 +94,15 @@ const [info1, setInfo1] = useState("")
                             </div>
                         }
 
-                    </div>  
+                    </div>
                     {
                         openname && <div className="seting-c-scroll-content-row" style={{ backgroundColor: 'floralwhite' }}>
                             <div className="seting-c-scroll-content-row-form">
                                 <form>
-                                    <div className="seting-c-scroll-content-row-form-input"><label style={{ width: '20%' }}>Họ </label><input name="ho" onChange={onChangeName} value={name1.ho} className="seting-c-scroll-content-row-form-input-text" type="text" /><label className="seting-font-pale" style={{ width: '20%' }}>{info==="Thiếu họ" || info==="!số" ? info : '*' }</label></div>
-                                    <div className="seting-c-scroll-content-row-form-input"><label style={{ width: '20%' }}>Tên đệm </label>  <input  name="tendem" value={name1.tendem} placeholder="Không bắt buộc" onChange={onChangeName} className="seting-c-scroll-content-row-form-input-text" type="text" /><label className="seting-font-pale" style={{ width: '20%' }}></label></div>
-                                    <div className="seting-c-scroll-content-row-form-input"><label style={{ width: '20%' }}>Tên </label> <input  name="name" onChange={onChangeName} value={name1.name} className="seting-c-scroll-content-row-form-input-text" type="text" /><label className="seting-font-pale" style={{ width: '20%' }}>{info==="Thiếu tên" || info==="!số" ? info : '*' }</label></div>
-                                    <div className="seting-c-scroll-content-row-form-input" style={{ display: 'flex', justifyContent: 'space-around' }}><div className="seting-c-scroll-content-row-form-input-button" onClick={onClick}>Xem lại thay đổi</div><div className="seting-c-scroll-content-row-form-input-button" onClick={()=>setOpenname(false)}>Hủy</div></div>
+                                    <div className="seting-c-scroll-content-row-form-input"><label style={{ width: '20%' }}>Họ </label><input name="ho" onChange={onChangeName} value={name1.ho} className="seting-c-scroll-content-row-form-input-text" type="text" /><label className="seting-font-pale" style={{ width: '20%' }}>{info === "Thiếu họ" || info === "!số" ? info : '*'}</label></div>
+                                    <div className="seting-c-scroll-content-row-form-input"><label style={{ width: '20%' }}>Tên đệm </label>  <input name="tendem" value={name1.tendem} placeholder="Không bắt buộc" onChange={onChangeName} className="seting-c-scroll-content-row-form-input-text" type="text" /><label className="seting-font-pale" style={{ width: '20%' }}></label></div>
+                                    <div className="seting-c-scroll-content-row-form-input"><label style={{ width: '20%' }}>Tên </label> <input name="name" onChange={onChangeName} value={name1.name} className="seting-c-scroll-content-row-form-input-text" type="text" /><label className="seting-font-pale" style={{ width: '20%' }}>{info === "Thiếu tên" || info === "!số" ? info : '*'}</label></div>
+                                    <div className="seting-c-scroll-content-row-form-input" style={{ display: 'flex', justifyContent: 'space-around' }}><div className="seting-c-scroll-content-row-form-input-button" onClick={onClick}>Xem lại thay đổi</div><div className="seting-c-scroll-content-row-form-input-button" onClick={() => setOpenname(false)}>Hủy</div></div>
                                 </form>
                             </div>
 
@@ -139,8 +139,8 @@ const [info1, setInfo1] = useState("")
                     {
                         openname1 && <div className="seting-c-scroll-content-row" style={{ backgroundColor: 'floralwhite' }}>
                             <div className="seting-c-scroll-content-row-form">
-                                <div className="seting-c-scroll-content-row-form-input"><label> Tên người dùng</label><input value={editusername} onChange={onChangeusername} className="seting-c-scroll-content-row-form-input-text" style={{ width: '50%' }} type="text" /><label className="seting-font-pale" style={{width:'25%'}}>{info1 ? info1 : null}</label></div>
-                                <div className="seting-c-scroll-content-row-form-input" style={{ display: 'flex', justifyContent: 'space-around' }}><div className="seting-c-scroll-content-row-form-input-button" onClick={onClickusername} >Xem lại thay đổi</div><div onClick={()=>setOpenname1(false)} className="seting-c-scroll-content-row-form-input-button">Hủy</div></div>
+                                <div className="seting-c-scroll-content-row-form-input"><label> Tên người dùng</label><input value={editusername} onChange={onChangeusername} className="seting-c-scroll-content-row-form-input-text" style={{ width: '50%' }} type="text" /><label className="seting-font-pale" style={{ width: '25%' }}>{info1 ? info1 : null}</label></div>
+                                <div className="seting-c-scroll-content-row-form-input" style={{ display: 'flex', justifyContent: 'space-around' }}><div className="seting-c-scroll-content-row-form-input-button" onClick={onClickusername} >Xem lại thay đổi</div><div onClick={() => setOpenname1(false)} className="seting-c-scroll-content-row-form-input-button">Hủy</div></div>
                             </div>
 
                         </div>

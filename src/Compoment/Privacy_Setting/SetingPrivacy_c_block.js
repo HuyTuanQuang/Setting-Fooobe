@@ -31,9 +31,7 @@ function SetingPrivacy_c_block(props) {
     }
     const [seach,setSeach]=useState("")
     const onChaneSeach = (e) =>{
-        const name =e.target.value;
-       
-        setSeach(name)
+        setSeach(e.target.value)
     }
 
     return (

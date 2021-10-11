@@ -22,7 +22,8 @@ function RouteSeting_r(props) {
             <Route path="/"></Route>
             <Route path="/"></Route>
           <Route path="/support/?ref=settings"></Route> */}
-          <Route path="/"><Seting_r /></Route>
+        <Route path="/setting"><Seting_r /></Route>
+        <Route path="/"></Route>
         </Switch>         
         </div>
     );

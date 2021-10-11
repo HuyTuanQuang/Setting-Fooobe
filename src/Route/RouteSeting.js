@@ -33,7 +33,8 @@ function RouteSeting(props) {
         <Route path="/setting/security"><SettingSecurity_c /></Route>
         <Route path="/setting/advertisers"><SettingAds_c /></Route>
         <Route path="/setting/suport"><SettingSupport_c /></Route>
-        <Route path="/"><Seting_c /></Route>
+        <Route path="/setting"><Seting_c /></Route>
+        <Route path="/"></Route>
       </Switch>
     </div>
   );

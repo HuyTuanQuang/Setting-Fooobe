@@ -4,7 +4,9 @@ import { FiChevronUp } from 'react-icons/fi';
 
 function SetingPrivacy_c(props) {
     const [open, setOpen] = useState(true)
+    const [open1, setOpen1] = useState(true)
     const [youFriend, SetyouFriend] = useState("Công khai")
+    const [youFriend1, SetyouFriend1] = useState("Công khai")
     const onchaneFfriend = (e) => {
         SetyouFriend(e.target.value)
     }
@@ -17,7 +19,7 @@ function SetingPrivacy_c(props) {
                 </div>
                 <div className="seting-c-scroll-content">
                     <div className="seting-c-scroll-content-privacy-row">
-                        <div className="seting-c-scroll-content-privacy-th">
+                        <div className="seting-c-scroll-content-privacy-th" style={{width:'24%'}}>
                             Lối tắt quyền riêng tư
                         </div>
                         <div className="seting-c-scroll-content-privacy-td">
@@ -43,7 +45,7 @@ function SetingPrivacy_c(props) {
                     </div>
                     <div style={{ width: '98%', borderBottom: '0.1px solid aqua', marginTop: '10px' }}></div>
                     <div className="seting-c-scroll-content-privacy-row" style={{justifyContent:'flex-end'}} >
-                        <div className="seting-c-scroll-content-privacy-th" style={{ width: '30%' }}>
+                        <div className="seting-c-scroll-content-privacy-th" style={{ width: '32%' }}>
                             Hoạt động của bạn
                         </div>
                         <div className="seting-c-scroll-content-privacy-td" style={{ width: '29%' }}>
@@ -83,16 +85,22 @@ function SetingPrivacy_c(props) {
                             <label className="seting-c-scroll-content-privacy-td-label">Nhật ký hoạt động  <label className="seting-font-pale"> Xem lại nhật ký hoạt động của bạn</label></label>
                         </div>
                     </div>
-                    <div className="seting-c-scroll-content-privacy-row" style={{justifyContent:'right'}}>
-                        <div className="seting-c-scroll-content-privacy-th">
+                    <div className="seting-c-scroll-content-privacy-row" style={{justifyContent:'left'}}>
+                        <div className="seting-c-scroll-content-privacy-th" style={{width:'36%'}}>
 
                         </div>
-                        <div className="seting-c-scroll-content-privacy-td" style={{ width: '49%' }}>
+                        <div className="seting-c-scroll-content-privacy-td" style={{ width: '40%' }}>
                             <label className="seting-c-scroll-content-privacy-td-label">Những người có thể theo dõi bạn</label>
 
                         </div>
-                        <div className="seting-c-scroll-content-privacy-td" style={{ width: '15%' }}>
-                            <label className="seting-c-scroll-content-row-link">Công khai</label>
+                        <div className="seting-c-scroll-content-privacy-td" style={{ width: '25%',display:'flex',justifyContent:'space-around' }}>
+                        <div className="seting-c-scroll-content-privacy-td" style={{ borderRadius:'0px'}}>
+                                <select onChange={(e)=>SetyouFriend1(e.target.value)} value={youFriend1} style={{ outline: 'none', borderRadius:'10px', height: '60%',width:'100%', fontSize: '10pt',border:'0.5px solid aqua',marginLeft:'5px' }}>
+                                    <option value="Công khai">Công Khai</option>
+                                    <option value="Bạn bè ">Bạn bè</option>
+                                    <option value="Chỉ mình tôi">Chỉ mình tôi</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>

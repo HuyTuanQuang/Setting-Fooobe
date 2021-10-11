@@ -6,7 +6,7 @@ function SettingSecurity_l(props) {
     return (
         <div className="seting-l">
         <div className="seting-l-nav">
-            <div className="seting-l-nav-font"><Link to="/" style={{color:'black',textDecoration:'none'}}>Cài đặt</Link> <label style={{fontSize:'10pt'}}>{" 〉"}</label> Bảo mật</div>
+            <div className="seting-l-nav-font"><Link to="/setting" style={{color:'black',textDecoration:'none'}}>Cài đặt</Link> <label style={{fontSize:'10pt'}}>{" 〉"}</label> Bảo mật</div>
             <div className="seting-l-nav-button">
                 <div
                     className="seting-l-nav-button-icon"

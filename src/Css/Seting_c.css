@@ -12,6 +12,8 @@
 .seting-link{
   font-size: 11pt;
   color: blue;
+  text-decoration: underline;
+  
 }
 .seting-link:hover{
   text-decoration: underline;
@@ -132,7 +134,6 @@ justify-content: space-between;
 .seting-c-scroll-content-row-link {
   width: 15%;
   font-weight: 400;
-
   margin-right: 1%;
   color: blue;
 }
@@ -175,6 +176,7 @@ justify-content: space-between;
   margin-left: 10px;
   display: flex;
   flex-direction: column;
+  width: 86%;
 }
 
 

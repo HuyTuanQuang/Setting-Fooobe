@@ -6,7 +6,7 @@ function SetingAcount_l(props) {
     return (
         <div className="seting-l">
         <div className="seting-l-nav">
-            <div className="seting-l-nav-font"><Link to="/" style={{color:'black',textDecoration:'none'}}>Cài đặt</Link>  <label style={{fontSize:'10pt'}}>{" 〉"}</label> Quyền riêng tư</div>
+            <div className="seting-l-nav-font"><Link to="/setting" style={{color:'black',textDecoration:'none'}}>Cài đặt</Link>  <label style={{fontSize:'10pt'}}>{" 〉"}</label> Quyền riêng tư</div>
             <div className="seting-l-nav-button">
                 <div
                     className="seting-l-nav-button-icon"

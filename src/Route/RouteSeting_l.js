@@ -35,8 +35,8 @@ function RouteSeting_l({hiden,setHiden}) {
           <Route path="/setting/suport"><SettingSupport_l /></Route>
             <Route path="/setting/suport/Feedback"><SettingSupport_l /></Route>
             <Route path="/setting/suport/community standards"><SettingSupport_l /></Route>
-            
-          <Route path="/"><Seting_l hiden={hiden} setHiden={setHiden} /></Route>
+            <Route path="/setting"><Seting_l hiden={hiden} setHiden={setHiden} /></Route>
+          <Route path="/"></Route>
         </Switch>
         </div>
     );

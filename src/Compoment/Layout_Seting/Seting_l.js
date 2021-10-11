@@ -30,7 +30,7 @@ if (locaiton === "/") setHiden(1)
       </div>
 
       <div className="seting-l-scroll" id="seting-l-scroll-style">
-        <Link to="/" className="seting-l-scroll-menuitem" style={hiden===1 ? {backgroundColor:'aqua'} : null}>
+        <Link to="/setting" className="seting-l-scroll-menuitem" style={hiden===1 ? {backgroundColor:'aqua'} : null}>
           <div className="seting-l-scroll-menuitem-icon">
             <CgProfile />
           </div>

@@ -49,11 +49,11 @@ function SetingPrivacy_c_profile(props) {
                         }
                         {
                             open ? <div style={{ width: '15%' }} className="seting-link" onClick={() => setOpen(!open)}>
-                                Chỉnh sửa
+                                <label>Chỉnh sửa</label>
                             </div>
                                 :
                                 <div style={{ width: '15%',  display: 'flex', justifyContent: 'space-evenly' }} className="seting-link" onClick={() => setOpen(!open)}>
-                                    Đóng
+                                     <label> Đóng</label>
                                 </div>
                         }
                     </div>
